@@ -1,0 +1,22 @@
+package views
+
+templ Index() {
+    @base() {
+        <h1 class="text-center text-6xl pb-6 mb-6 border-b">Cheat Sheet Title</h1>
+        
+        @row() {
+            @section("Full Width, 3 columns", "full", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+        
+    }
+}

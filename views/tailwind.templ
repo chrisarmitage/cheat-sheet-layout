@@ -1,0 +1,209 @@
+package views
+
+templ TemplateIndex() {
+    @base() {
+        <h1 class="text-center text-6xl pb-6 mb-6 border-b">Cheat Sheet Title</h1>
+        
+        @row() {
+            @section("Full Width, 3 columns", "full", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+        
+        @row() {
+            @section("Full Width, 2 columns, double left", "full", false) {
+                @column("double") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Full Width, 2 columns, double right", "full", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("double") {
+                    <p>Column 2</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Full Width, 3 columns, box", "full", true) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Double, 2 columns", "double", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single", "single", false) {
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Double, 2 columns, box", "double", true) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single", "single", false) {
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Double, 2 columns", "double", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single, box", "single", true) {
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+        
+        @row() {
+            @section("Single", "single", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Double, 2 columns", "double", false) {
+                @column("single") {
+                    <p>Column B</p>
+                }
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Single, box", "single", true) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Double, 2 columns", "double", false) {
+                @column("single") {
+                    <p>Column B</p>
+                }
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Single", "single", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Double, 2 columns, box", "double", true) {
+                @column("single") {
+                    <p>Column B</p>
+                }
+                @column("single") {
+                    <p>Column C</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Single, box", "Single", true) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single, box", "Single", true) {
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+
+        @row() {
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 1</p>
+                }
+            }
+            @section("Single, box", "Single", true) {
+                @column("single") {
+                    <p>Column 2</p>
+                }
+            }
+            @section("Single", "Single", false) {
+                @column("single") {
+                    <p>Column 3</p>
+                }
+            }
+        }
+        
+        
+    }
+}
